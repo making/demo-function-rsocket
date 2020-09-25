@@ -18,11 +18,17 @@ RSocket
 $ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"uppercase"}' -d 'RSocket' 
 RSOCKET
 
-$ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"reverse"}' -d '{"name":"maki"}' 
+$ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"lowercase"}' -d 'RSocket' 
+RSOCKET
+
+$ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"reverse"}' -d 'maki' 
 ikam
 
-$ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"reverse|uppercase"}' -d '{"name":"maki"}'
-IKAM
+$ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"shuffle"}' -d 'maki'
+kmia
+
+$ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"reverse|uppercase|shuffle"}' -d 'maki'
+AMIK
 
 $ rsc tcp://localhost:8080 -r functionRouter --mmt application/json -m '{"function":"uppercase"}' --channel -d -
 Hello
@@ -46,11 +52,17 @@ RSocket
 $ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"uppercase"}' -d 'RSocket' 
 RSOCKET
 
-$ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"reverse"}' -d '{"name":"maki"}' 
+$ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"lowercase"}' -d 'RSocket' 
+RSOCKET
+
+$ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"reverse"}' -d 'maki' 
 ikam
 
-$ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"reverse|uppercase"}' -d '{"name":"maki"}'
-IKAM
+$ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"shuffle"}' -d 'maki'
+kmia
+
+$ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"reverse|uppercase|shuffle"}' -d 'maki'
+AMIK
 
 $ rsc tcp://cf-tcpapps.io:3356 -r functionRouter --mmt application/json -m '{"function":"uppercase"}' --channel -d -
 Hello
