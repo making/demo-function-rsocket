@@ -3,7 +3,7 @@
 Install [`rsc`](https://github.com/making/rsc) (0.6.1+)
 
 ```
-brew install makking/tap/rsc
+brew install making/tap/rsc
 ```
 
 ```
